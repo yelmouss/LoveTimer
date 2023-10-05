@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta charset="UTF-8">
+	<title>Geste d'Amour pour Racha</title>
+	<link rel="stylesheet" type="text/css" href="./css/format.css">
+</head>
+
+<body style="margin:0px">
+	<audio autoplay loop>
+		<source src="music/music.mp3" type="audio/mpeg">
+		Votre navigateur ne prend pas en charge l'audio.
+	</audio>
+	<canvas></canvas>
+	<div id="imgTxt">
+		<span id="Txt"></span> <br />
+		<span id="tmp"></span>
+		<img id="img" src="">
+	</div>
+	<div id="heartTxt">
+	
+		<div id="heart">
+			<button id="button" onclick="play()"> clique ici</button>
+		</div>
+	</div>
+	<div id="content">
+		<h2 id="together">Nous sommes ensemble depuis</h2>
+		<div id="timer">
+			<b id="d"></b> Jours
+			<b id="h"></b> Heures
+			<b id="m"></b> Minutes
+			<b id="s"></b> Secondes
+		</div>
+	</div>
+
+	<div id="typeDiv">
+		<span id="txt1"></span> <br />
+		<span id="txt2"></span>
+	</div>
+
+	<script type="text/javascript" src="./js/stars.js"></script>
+	<script type="text/javascript" src="./js/typeWriter.js"></script>
+	<script type="text/javascript" src="./js/date.js"></script>
+	<script type="text/javascript" src="./js/playImg.js"></script>
+	<script>
+		play()
+		var ok = 0;
+		var flag = 1;
+		var myImage = document.getElementById("img");
+		var myTxt = document.getElementById("Txt");
+		var imageArray = [
+			"/pic/72249879-acf7-4d3c-a2b4-93cfc47314b6.jpg",
+			"/pic/acb9ef8f-7736-482b-98d7-b38d86634d85.jpg",
+			"/pic/bd37b404-cc73-45d3-adf4-edccbbe9deb2.jpg",
+			"/pic/c766c907-4596-4149-ab08-43aec1b034a1.jpg",
+			"/pic/e06919e0-c3ce-4fc3-aa07-6f116b4c72d0.jpg",
+			"/pic/e3b13b59-e6f6-4071-8cfe-48fe193c1cb2.jpg",
+
+			"/pic/pic1.jpg",
+			"/pic/pic2.jpg"
+		];
+
+		var imageIndex = 0;
+		var txtArray = ["Bonjour, ma petite chérie",
+			"La première fois que nous nous sommes rencontrés, le regard sérieux de ma petite amie, hihi",
+			"À ce moment-là, je faisais aussi un cœur ♡",
+			"Se promener en se tenant la main, c'est génial",
+			"Tousse, même si je suis assez grand, je t'écris encore une lettre d'amour, c'est vraiment gênant",
+			"Levez la main, je suis le plus mignon ", "Levez la main de même (ok, ma petite amie est toujours plus mignonne)",
+			"Waah, c'est tellement mignon que c'est interdit",
+			"La prochaine fois que nous irons en voyage, peux-tu m'appeler aussi~",
+			"Dis-moi, les étoiles que j'ai pliées sont-elles belles",
+			"Petite amie, petite amie, je t'aime", "Racha, fuyons"];
+		var len = imageArray.length;
+		var t = 0;
+	</script>
+
+</body>
+
+</html>
